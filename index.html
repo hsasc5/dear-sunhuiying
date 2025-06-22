@@ -137,8 +137,8 @@
     <i class="fa fa-pause hidden" id="pause-icon"></i>
   </div>
   <div class="music-info hidden md:block">
-    <div class="text-sm font-semibold" id="current-song">我们的歌</div>
-    <div class="text-xs opacity-80">周董</div>
+    <div class="text-sm font-semibold" id="current-song">晴天</div>
+    <div class="text-xs opacity-80">周杰伦</div>
   </div>
   <div class="music-wave hidden" id="music-wave">
     <span></span>
@@ -165,19 +165,91 @@
   </div>
   <div class="max-h-64 overflow-y-auto">
     <ul id="song-list" class="divide-y divide-gray-100">
-      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200 bg-love-light/50" data-song="25642687" data-artist="周董" data-title="我们的歌">
+      <!-- 默认歌曲：周杰伦《晴天》（在线资源） -->
+      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200 bg-love-light/50" 
+          data-song="https://music.163.com/song/media/outer/url?id=25642687.mp3" 
+          data-artist="周杰伦" 
+          data-title="晴天">
         <div class="w-8 h-8 bg-love-primary/20 rounded-full flex items-center justify-center text-love-primary mr-3">
           <i class="fa fa-music"></i>
         </div>
         <div class="flex-1">
-          <div class="font-medium text-sm">我们的歌</div>
-          <div class="text-xs text-gray-500">周董</div>
+          <div class="font-medium text-sm">晴天</div>
+          <div class="text-xs text-gray-500">周杰伦</div>
         </div>
         <div class="text-love-primary">
           <i class="fa fa-playing-circle"></i>
         </div>
       </li>
-      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" data-song="25642688" data-artist="孙燕姿" data-title="遇见">
+      
+      <!-- 本地歌曲1 -->
+      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" 
+          data-song="yinyue/当爱在靠近.ogg" 
+          data-artist="张家旺_悦开心" 
+          data-title="当爱在靠近 (合唱版)">
+        <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 mr-3">
+          <i class="fa fa-music"></i>
+        </div>
+        <div class="flex-1">
+          <div class="font-medium text-sm">当爱在靠近 (合唱版)</div>
+          <div class="text-xs text-gray-500">张家旺-悦开心</div>
+        </div>
+        <div class="text-gray-300">
+          <i class="fa fa-play-circle"></i>
+        </div>
+      </li>
+      
+      <!-- 本地歌曲2 -->
+      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" 
+          data-song="yinyue/甜而不腻.ogg" 
+          data-artist="葛东琪" 
+          data-title="甜而不腻">
+        <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 mr-3">
+          <i class="fa fa-music"></i>
+        </div>
+        <div class="flex-1">
+          <div class="font-medium text-sm">甜而不腻</div>
+          <div class="text-xs text-gray-500">葛东琪</div>
+        </div>
+        <div class="text-gray-300">
+          <i class="fa fa-play-circle"></i>
+        </div>
+      </li>
+      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" 
+          data-song="yinyue/多幸运.ogg" 
+          data-artist="韩安旭" 
+          data-title="多幸运">
+        <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 mr-3">
+          <i class="fa fa-music"></i>
+        </div>
+        <div class="flex-1">
+          <div class="font-medium text-sm">多幸运</div>
+          <div class="text-xs text-gray-500">韩安旭</div>
+        </div>
+        <div class="text-gray-300">
+          <i class="fa fa-play-circle"></i>
+        </div>
+      </li>
+      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" 
+          data-song="yinyue/你说爱情啊.ogg" 
+          data-artist="摩登兄弟刘宇宁" 
+          data-title="你说爱情啊">
+        <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 mr-3">
+          <i class="fa fa-music"></i>
+        </div>
+        <div class="flex-1">
+          <div class="font-medium text-sm">你说爱情啊</div>
+          <div class="text-xs text-gray-500">摩登兄弟刘宇宁</div>
+        </div>
+        <div class="text-gray-300">
+          <i class="fa fa-play-circle"></i>
+        </div>
+      </li>
+      <!-- 其他在线歌曲 -->
+      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" 
+          data-song="https://music.163.com/song/media/outer/url?id=25642688.mp3" 
+          data-artist="孙燕姿" 
+          data-title="遇见">
         <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 mr-3">
           <i class="fa fa-music"></i>
         </div>
@@ -189,37 +261,17 @@
           <i class="fa fa-play-circle"></i>
         </div>
       </li>
-      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" data-song="25642689" data-artist="梁静茹" data-title="勇气">
+      
+      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" 
+          data-song="https://music.163.com/song/media/outer/url?id=25642689.mp3" 
+          data-artist="梁静茹" 
+          data-title="勇气">
         <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 mr-3">
           <i class="fa fa-music"></i>
         </div>
         <div class="flex-1">
           <div class="font-medium text-sm">勇气</div>
           <div class="text-xs text-gray-500">梁静茹</div>
-        </div>
-        <div class="text-gray-300">
-          <i class="fa fa-play-circle"></i>
-        </div>
-      </li>
-      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" data-song="25642690" data-artist="王力宏" data-title="需要人陪">
-        <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 mr-3">
-          <i class="fa fa-music"></i>
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-sm">需要人陪</div>
-          <div class="text-xs text-gray-500">王力宏</div>
-        </div>
-        <div class="text-gray-300">
-          <i class="fa fa-play-circle"></i>
-        </div>
-      </li>
-      <li class="p-3 flex items-center hover:bg-love-light cursor-pointer transition-colors duration-200" data-song="25642691" data-artist="林俊杰" data-title="小酒窝">
-        <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 mr-3">
-          <i class="fa fa-music"></i>
-        </div>
-        <div class="flex-1">
-          <div class="font-medium text-sm">小酒窝</div>
-          <div class="text-xs text-gray-500">林俊杰</div>
         </div>
         <div class="text-gray-300">
           <i class="fa fa-play-circle"></i>
@@ -259,7 +311,7 @@
       <div class="w-20 h-1 bg-love-primary rounded-full mx-auto mb-12"></div>
       
       <div class="relative overflow-hidden rounded-2xl shadow-2xl transform scale-95 opacity-0" id="hero-image">
-        <img src="https://picsum.photos/seed/love123/800/500" alt="孙惠莹和我" class="w-full h-auto object-cover">
+        <img src="henshuihu--5.27-ta-ye.jpg" alt="孙惠莹和我" class="w-full h-auto object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
           <div class="p-6 text-white">
             <p class="text-[clamp(1rem,2vw,1.25rem)] font-semibold">我们的故事</p>
@@ -293,13 +345,13 @@
               <div class="carousel-container overflow-hidden rounded-xl shadow-lg">
                 <div class="carousel-slides flex transition-transform duration-500 ease-in-out" id="carousel-slides">
                   <div class="carousel-slide min-w-full">
-                    <img src="https://picsum.photos/seed/meeting1/500/500" alt="我们相遇的地方" class="w-full h-auto">
+                    <img src="lunbo/IMG_20250622_155330.jpg" alt="我们相遇的地方" class="w-full h-auto">
                   </div>
                   <div class="carousel-slide min-w-full">
-                    <img src="https://picsum.photos/seed/meeting2/500/500" alt="第一次约会" class="w-full h-auto">
+                    <img src="lunbo/IMG_20250622_155345.jpg" alt="第一次约会" class="w-full h-auto">
                   </div>
                   <div class="carousel-slide min-w-full">
-                    <img src="https://picsum.photos/seed/meeting3/500/500" alt="美好的回忆" class="w-full h-auto">
+                    <img src="lunbo/IMG_20250622_155355.jpg" alt="美好的回忆" class="w-full h-auto">
                   </div>
                 </div>
               </div>
@@ -338,7 +390,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- 回忆卡片1 -->
         <div class="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform translate-y-20 opacity-0" data-card-index="1">
-          <img src="https://picsum.photos/seed/moment1/400/300" alt="我们的第一次约会" class="w-full h-48 object-cover">
+          <img src="chengdu-4.19.jpg" alt="我们的第一次约会" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold text-love-primary mb-2">第一次约会</h3>
             <p class="text-gray-700 text-sm">在石家庄的公园，我们一起散步、聊天，一切都不在普通，仿佛时间也为我们停留。</p>
@@ -348,7 +400,7 @@
         
         <!-- 回忆卡片2 -->
         <div class="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform translate-y-20 opacity-0" data-card-index="2" style="transition-delay: 0.2s;">
-          <img src="https://picsum.photos/seed/moment2/400/300" alt="一起旅行" class="w-full h-48 object-cover">
+          <img src="henshuihu-xiyang-qin.jpg" alt="一起旅行" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold text-love-primary mb-2">第一次旅行</h3>
             <p class="text-gray-700 text-sm">我们一起去了衡水湖畔，看日落，那是我人生中最美好的旅程之一，也期待和你一起去看看日出呀。</p>
@@ -358,11 +410,11 @@
         
         <!-- 回忆卡片3 -->
         <div class="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform translate-y-20 opacity-0" data-card-index="3" style="transition-delay: 0.4s;">
-          <img src="https://picsum.photos/seed/moment3/400/300" alt="庆祝生日" class="w-full h-48 object-cover">
+          <img src="hua1-5.20.jpg" alt="520" class="w-full h-48 object-cover">
           <div class="p-6">
-            <h3 class="text-xl font-semibold text-love-primary mb-2">你的生日</h3>
-            <p class="text-gray-700 text-sm">想和你一起庆祝生日，那一刻，看到你开心的笑容，应该会是我是我最大的满足。</p>
-            <div class="mt-4 text-xs text-gray-500">2025年10月31日</div>
+            <h3 class="text-xl font-semibold text-love-primary mb-2">520</h3>
+            <p class="text-gray-700 text-sm">520送你的花，那一刻，看到你开心的笑容，应该会是我是我最大的满足。</p>
+            <div class="mt-4 text-xs text-gray-500">2025年5月20日</div>
           </div>
         </div>
       </div>
@@ -472,7 +524,7 @@
           
           <div class="w-full md:w-1/2 order-1 md:order-2">
             <div class="relative">
-              <img src="https://picsum.photos/seed/future/500/500" alt="我们的未来" class="w-full h-auto rounded-xl shadow-lg">
+              <img src="897531ae4bc84dd1adfea3823bde16a1~tplv-a9rns2rl98-image.jpg" alt="我们的未来" class="w-full h-auto rounded-xl shadow-lg">
               <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-6">
                 <p class="text-white font-romantic text-xl">永远爱你</p>
               </div>
@@ -543,41 +595,35 @@
     </div>
   </div>
   <script>
-//音乐播放器控制
+  // 获取DOM元素
   const musicPlayer = document.getElementById('music-player');
+  const bgMusic = document.getElementById('bg-music');
   const playPauseBtn = document.getElementById('play-pause');
   const playIcon = document.getElementById('play-icon');
   const pauseIcon = document.getElementById('pause-icon');
-  const musicWave = document.getElementById('music-wave');
-  const bgMusic = document.getElementById('bg-music');
-  const currentSong = document.getElementById('current-song');
   const musicListToggle = document.getElementById('music-list-toggle');
   const musicList = document.getElementById('music-list');
   const closeMusicList = document.getElementById('close-music-list');
-  const songItems = document.querySelectorAll('#song-list li');
-
+  const songList = document.getElementById('song-list');
+  const currentSong = document.getElementById('current-song');
+  const musicWave = document.getElementById('music-wave');
+  
   // 播放/暂停音乐
-  playPauseBtn.addEventListener('click', togglePlay);
-
-  function togglePlay() {
+  playPauseBtn.addEventListener('click', () => {
     if (bgMusic.paused) {
-      bgMusic.play().then(() => {
-        playIcon.classList.add('hidden');
-        pauseIcon.classList.remove('hidden');
-        musicWave.classList.remove('hidden');
-      }).catch(error => {
-        console.error("播放失败:", error);
-        // 可能需要用户交互才能播放，提示用户点击播放按钮
-      });
+      bgMusic.play();
+      playIcon.classList.add('hidden');
+      pauseIcon.classList.remove('hidden');
+      musicWave.classList.remove('hidden');
     } else {
       bgMusic.pause();
       playIcon.classList.remove('hidden');
       pauseIcon.classList.add('hidden');
       musicWave.classList.add('hidden');
     }
-  }
-
-  // 显示/隐藏音乐列表
+  });
+  
+  // 切换音乐列表显示/隐藏
   musicListToggle.addEventListener('click', () => {
     if (musicList.classList.contains('opacity-0')) {
       musicList.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
@@ -587,61 +633,71 @@
       musicList.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
     }
   });
-
+  
+  // 关闭音乐列表
   closeMusicList.addEventListener('click', () => {
     musicList.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
     musicList.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
   });
-
-  // 点击其他区域关闭音乐列表
-  document.addEventListener('click', (e) => {
-    if (!musicPlayer.contains(e.target) && !musicList.contains(e.target)) {
-      musicList.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
-      musicList.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
-    }
-  });
-
-  // 切换歌曲
-  songItems.forEach(item => {
+  
+  // 点击音乐列表项切换歌曲
+  songList.querySelectorAll('li').forEach(item => {
     item.addEventListener('click', () => {
-      const songId = item.getAttribute('data-song');
-      const title = item.getAttribute('data-title');
-      const artist = item.getAttribute('data-artist');
-      
-      // 更新当前播放歌曲信息
-      currentSong.textContent = title;
-      songItems.forEach(i => {
-        i.classList.remove('bg-love-light/50');
-        i.querySelector('.w-8').classList.remove('bg-love-primary/20');
-        i.querySelector('.w-8').classList.add('bg-gray-200');
-        i.querySelector('.w-8 i').classList.remove('text-love-primary');
-        i.querySelector('.w-8 i').classList.add('text-gray-500');
-        i.querySelector('div:last-child i').classList.remove('fa-playing-circle', 'text-love-primary');
-        i.querySelector('div:last-child i').classList.add('fa-play-circle', 'text-gray-300');
+      // 更新当前播放歌曲的样式
+      songList.querySelectorAll('li').forEach(li => {
+        li.classList.remove('bg-love-light/50');
+        li.querySelector('.w-8').classList.remove('bg-love-primary/20', 'text-love-primary');
+        li.querySelector('.w-8').classList.add('bg-gray-200', 'text-gray-500');
+        li.querySelector('div:last-child').classList.remove('text-love-primary', 'fa-playing-circle');
+        li.querySelector('div:last-child').classList.add('text-gray-300', 'fa-play-circle');
+        li.querySelector('div:last-child i').classList.remove('fa-playing-circle');
+        li.querySelector('div:last-child i').classList.add('fa-play-circle');
       });
       
       item.classList.add('bg-love-light/50');
-      item.querySelector('.w-8').classList.remove('bg-gray-200');
-      item.querySelector('.w-8').classList.add('bg-love-primary/20');
-      item.querySelector('.w-8 i').classList.remove('text-gray-500');
-      item.querySelector('.w-8 i').classList.add('text-love-primary');
-      item.querySelector('div:last-child i').classList.remove('fa-play-circle', 'text-gray-300');
-      item.querySelector('div:last-child i').classList.add('fa-playing-circle', 'text-love-primary');
+      item.querySelector('.w-8').classList.remove('bg-gray-200', 'text-gray-500');
+      item.querySelector('.w-8').classList.add('bg-love-primary/20', 'text-love-primary');
+      item.querySelector('div:last-child').classList.remove('text-gray-300', 'fa-play-circle');
+      item.querySelector('div:last-child').classList.add('text-love-primary', 'fa-playing-circle');
+      item.querySelector('div:last-child i').classList.remove('fa-play-circle');
+      item.querySelector('div:last-child i').classList.add('fa-playing-circle');
       
-      // 更新音频源并播放
-      bgMusic.src = `https://music.163.com/song/media/outer/url?id=${songId}.mp3`;
+      // 更新当前播放歌曲信息
+      const songUrl = item.getAttribute('data-song');
+      const artist = item.getAttribute('data-artist');
+      const title = item.getAttribute('data-title');
+      
+      bgMusic.src = songUrl;
+      currentSong.textContent = title;
+      currentSong.nextElementSibling.textContent = artist;
+      
+      // 加载并播放新歌曲（在线资源需重新加载）
       bgMusic.load();
-      bgMusic.play().then(() => {
-        playIcon.classList.add('hidden');
-        pauseIcon.classList.remove('hidden');
-        musicWave.classList.remove('hidden');
-      }).catch(error => {
-        console.error("切换歌曲失败:", error);
+      bgMusic.play().catch(e => {
+        console.log("播放失败，请检查URL是否有效");
       });
+      playIcon.classList.add('hidden');
+      pauseIcon.classList.remove('hidden');
+      musicWave.classList.remove('hidden');
       
       // 关闭音乐列表
       musicList.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
       musicList.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
+    });
+  });
+  
+  // 音乐播放结束时重置图标
+  bgMusic.addEventListener('ended', () => {
+    playIcon.classList.remove('hidden');
+    pauseIcon.classList.add('hidden');
+    musicWave.classList.add('hidden');
+  });
+  
+  // 为音乐波形添加动画效果
+  document.addEventListener('DOMContentLoaded', () => {
+    const waveBars = musicWave.querySelectorAll('span');
+    waveBars.forEach((bar, index) => {
+      bar.style.animation = `wave 1s ease-in-out ${index * 0.1}s infinite alternate`;
     });
   });
     // 创建爱心粒子效果
